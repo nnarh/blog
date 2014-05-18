@@ -23,7 +23,6 @@
     <% end %>
   <% end %>
 </div> 
-
 <%= form_for([@post, Comment.new], remote: true) do |f| %>
   <p><%= f.label :body, "New Comment" %><br />
   	 <%= f.text_area :body %>
